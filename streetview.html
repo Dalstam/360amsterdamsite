@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <script src="js/aframe.min.js"></script>
+<style>
+
+
+</style>
+</head>
+
+<body >
+      <a-scene>
+          <a-camera position="0 1.7 0" cursor-visible="" cursor-scale="" cursor-color=""></a-camera>
+          <a-sky src="img/lazange.jpg" >
+              <a-animation attribute="rotation" delay="2000" dur="100000" direction="normal" easing="linear" fill="both" to="0 360 0">
+              </a-animation>
+          </a-sky>
+      </a-scene>
+
+
+
+  <script>
+      var scene = document.querySelector("a-scene");
+      var sky = document.querySelector('a-sky');
+      var animat = document.querySelector('a-animation')
+      var n = 1;
+      if (scene.hasLoaded) {
+          run();
+      } else {
+          scene.addEventListener("loaded", run);
+      }
+
+
+
+
+
+      function run() {
+
+          animat.addEventListener('animationend', function(e) {
+              console.log("animationend");
+              console.log("status voor = " + n);
+
+              switch (n) {
+                  case 0:
+                      sky.setAttribute('src', "img/360img.JPG");
+                      n++
+                      break;
+                  case 1:
+                      sky.setAttribute('src', "img/360img2.JPG");
+                      n++
+                      break;
+                  case 2:
+                      sky.setAttribute('src', "img/360img3.JPG");
+                      n++
+                      break;
+                  case 3:
+                      sky.setAttribute('src', "img/360img4.jpg");
+                      n++
+                      break;
+                  default:
+                      sky.setAttribute('src', "img/header.jpg");
+                      n = 0
+              }
+
+              console.log("status na = " + n);
+              animat.start();
+          }, false);
+
+      }
+  </script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+    "elements": {
+        "a-animation": {},
+        "a-camera": {},
+        "a-assets": {},
+        "a-sky": {},
+        "a-scene": {}
+    },
+    "attributes": {
+        "integrity": {
+            "context": "link"
+        }
+    }
+}

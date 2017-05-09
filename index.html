@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>
+            360FOTOAMSTERDAM - 360 &deg; fotografie
+        </title>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel="stylesheet" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel="stylesheet" type="text/css">
+        <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+        <link href="css/creative.css" rel="stylesheet">
+
+        <link href="css/style.css" rel="stylesheet">
+        <script type="text/javascript" src="js/aframe.min.js"></script>
+
+        <!--[if lt IE 9]>
+        <script src=https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js></script>
+        <script src=https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js></script>
+        <![endif]-->
+    </head>
+
+    <body id="page-top">
+
+
+        <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle
+                            navigation</span> Menu</button>
+                    <a class="navbar-brand page-scroll" href="#page-top"><img alt="Brand" id="brandLogo" class="img-responsive" src="img/icons/Logo_zwart_menu.png"></a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a class="page-scroll " href="#whatis">Wat is een 360 &deg; foto?</a></li>
+                        <li><a class="page-scroll " href="#about">Waarom? </a></li>
+                        <li><a class="page-scroll" href="#services">Prijs en werkwijze</a></li>
+                        <li><a class="page-scroll" href="#portfolio">Wie gingen voor?</a></li>
+                        <li><a class="page-scroll" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <header>
+            <div id="myEmbeddedScene"  >
+                <a-scene embedded i360x>
+                    <a-assets>
+                        <img id="img360" src="img/header/360img.jpg">
+                        <img id="img3601" src="img/header/360img1.jpg">
+                        <img id="img3602" src="img/header/360img2.jpg">
+                        <img id="img3603" src="img/header/360img3.jpg">
+                        <img id="img3604" src="img/header/360img4.jpg">
+                        <img id="img3605" src="img/header/360img5.jpg">
+                    </a-assets>
+
+                    <a-camera position="0 0 0" cursor-visible="" cursor-scale="" cursor-color="">
+                    </a-camera>
+                    <a-sky src="#img360" rotation=" 0 -85 0">
+                        <a-animation attribute="rotation" delay="3000" dur="30000" direction=""  easing="linear" fill="both" to="0  270  0">
+                        </a-animation>
+                    </a-sky>
+                </a-scene>
+            </div>
+
+            <div class="header-content">
+
+                <div class="header-content-inner">
+                    <div><img id="headerLogo" src="img/icons/Logo_zwart.png" class="img-responsive" alt="">
+                        <h1 id="homeHeading">
+                            Bereik meer klanten via Google StreetView en Google Maps.<br />
+                            24 uur per dag, op computer, laptop, tablet en smartphone.
+                        </h1>
+                        <div >
+                            <br>
+                            <div>
+                                <p>
+                                <h4> Je kijkt naar de 360 &deg; foto van
+                                    <span id="imgName">
+                                        Baksels -ABSOLUTELY HOMEMADE
+                                    </span>
+                                </h4>
+                                </p>
+                            </div>
+                            <a class="" href="#whatis"> <img class="" src="img/icons/circle.png" alt="Klik om meer te weten te komen over 360fotoamsterdam/"> </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+        <section   id="whatis">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading">
+                            Met 360&deg; foto's van 360fotoamsterdam,  laat je klanten in de rondte kijken in je bedrijfsruimte.  Makelijk te plaatsen op Google maps, Facebook en je eigen website.  Voor  &euro; 150
+                        </h2>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="bg-primary" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading">
+                            Waarom een 360&deg; tour of foto op Google maps?
+                        </h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 text-center">
+                        <div class="service-box">
+                            <h3>Online vindbaarheid in Google</h3>
+                            <p class="text-muted">
+                                Voor de vindbaarheid is het van belang dat een consument relevante zoekresultaten vindt. Een 360&deg; impressie verhoogt de relevantie van uw bedrijf en positie in Google.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 text-center">
+                        <div class="service-box">
+                            <h3>Meer interesse via Google Maps </h3>
+                            <p class="text-muted">
+                                2 op de 3 consumenten zoekt voor informatie over lokale bedrijven via Google Maps. Een 360&deg; foto of tour vergroot de interesse en biedt meer kansen.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 text-center">
+                        <div class="service-box">
+                            <h3>Meer klanten in uw bedrijf</h3>
+                            <p class="text-muted">
+                                Het hebben van een 360&deg; impressie op Google Maps en Google, levert gemiddeld 2x meer kans aan een bezoek aan uw bedrijf op.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 text-center">
+                        <div class="service-box">
+                            <h3>Positieve beeldvorming en vertouwen</h3>
+                            <p class="text-muted">
+                                360&deg; foto's geven consumenten een postief beeld van uw bedrijf. Uw bent daardoor transparant en dat wordt gewaardeerd.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section id="services">
+            <!-- <div class="container">
+              <div class="row">
+                <div class="col-lg-12 text-center">
+                  <h2 class="section-heading"></h2>
+                  <hr class="primary">
+                </div>
+              </div>
+            </div> -->
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 text-center">
+                        <div class="service-box">
+                            <i class="fa fa-4x fa-street-view text-primary sr-icons"></i>
+                            <h3>Laat zien wat je doet!</h3><br />
+                            <hr /><br />
+                            <p class="text-muted">
+                                In een lege ruimte staan klanten bijna nooit. Er is altijd wel wat te zien in uw bedrijf. Het streven is naar altijd een verhaal en bedrijvigheid. Samen gaan we opzoek naar een geschikt moment en wat we in beeld gaan brengen.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 text-center">
+                        <div class="service-box">
+                            <i class="fa  fa-4x  fa-picture-o text-primary sr-icons" aria-hidden="true"></i>
+                            <h3>In een uur klaar en binnen 24 uur op Google maps</h3>
+                            <hr /><br />
+                            <p class="text-muted">
+                                Het maken van een 360&deg; impressie duurt in de meeste gevalen een uur. We nemen wat test foto's en dan zijn we er klaar voor. Het maken van één foto duurt 2 á 3 seconden. Als we de juiste foto's hebben, kunnen ze geplaatst worden op Google Maps.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 text-center">
+                        <div class="service-box">
+                            <i class="fa fa-4x fa-eur text-primary sr-icons"></i>
+                            <h3>Een vaste prijs</h3><br />
+                            <hr />
+                            <h2 class="text-muted">&euro; 150,00</h2><br />
+                            <p class="text-muted">
+                                Uw hele bedrijf in 360&deg; op Google maps, te delen via Social media en op de website.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="no-padding" id="portfolio">
+            <div class="container-fluid">
+                <div class="row no-gutter">
+                    <div class="col-lg-4 col-sm-6">
+                        <a href="https://goo.gl/maps/UJgPUwu9tBv" target="_blank" class="portfolio-box">
+                            <img src="img/portfolio/thumbnails/1.jpg" class="img-responsive" alt="The Parlour Hairsalon - Google Business View">
+                            <div class="portfolio-box-caption">
+                                <div class="portfolio-box-caption-content">
+                                    <div class="project-category text-faded">Kapper</div>
+                                    <div class="project-name">The Parlour Hairsalon</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a href="https://goo.gl/maps/gPdCeKfBtA82" target="_blank" class="portfolio-box">
+                            <img src="img/portfolio/thumbnails/2.jpg" class="img-responsive" alt="Café de Hut - Google Business View">
+                            <div class="portfolio-box-caption">
+                                <div class="portfolio-box-caption-content">
+                                    <div class="project-category text-faded">Horeca</div>
+                                    <div class="project-name">Café de Hut</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a href="https://goo.gl/maps/MCqiLX7PgMR2" target="_blank" class="portfolio-box">
+                            <img src="img/portfolio/thumbnails/3.jpg" class="img-responsive" alt="Foto den Boer - Google Business View">
+                            <div class="portfolio-box-caption">
+                                <div class="portfolio-box-caption-content">
+                                    <div class="project-category text-faded">Foto winkel</div>
+                                    <div class="project-name">Foto den Boer</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="row no-gutter">
+                    <div class="col-lg-4 col-sm-6">
+                        <a href="https://goo.gl/maps/nSavJKwghct" target="_blank" class="portfolio-box">
+                            <img src="img/portfolio/thumbnails/4.jpg" class="img-responsive" alt="Bakkerij Westerbos- Google Business View">
+                            <div class="portfolio-box-caption">
+                                <div class="portfolio-box-caption-content">
+                                    <div class="project-category text-faded">Bakkerij</div>
+                                    <div class="project-name">Bakkerij Westerbos</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a href="https://goo.gl/maps/Foajntz4yar" target="_blank" class="portfolio-box">
+                            <img src="img/portfolio/thumbnails/5.jpg" class="img-responsive" alt="van Baerle Bloemen - Google Business View">
+                            <div class="portfolio-box-caption">
+                                <div class="portfolio-box-caption-content">
+                                    <div class="project-category text-faded">Bloemenstal</div>
+                                    <div class="project-name">van Baerle Bloemen</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a href="https://goo.gl/maps/8q9rHBeqLFQ2" target="_blank" class="portfolio-box">
+                            <img src="img/portfolio/thumbnails/6.jpg" class="img-responsive" alt="Funbase - Google Business View">
+                            <div class="portfolio-box-caption">
+                                <div class="portfolio-box-caption-content">
+                                    <div class="project-category text-faded">Officespace/Playground</div>
+                                    <div class="project-name">Funbase</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <aside class="bg-dark">
+            <div class="container text-center">
+                <div class="call-to-action">
+                    <h2>
+                        Visie<br>
+
+                    </h2>
+                    <hr class="light">
+                    <p class="text-faded">
+                        Amsterdam heeft vele mooie kleine en middelgrote winkels en dienstverleners. Mijn doel is de binnenkant te laten zien op Google Maps en iedereen kennis te laten maken met deze gepassioneerde ondernemers.
+                    </p>
+                </div>
+            </div>
+        </aside>
+        <section id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 text-center">
+                        <h2 class="section-heading">Let's Get In Touch!</h2>
+                        <hr class="primary">
+                    </div>
+                    <div class="col-lg-4 col-lg-offset-2 text-center">
+                        <p>+31652667162</p>
+                    </div>
+                    <div class="col-lg-4 text-center">
+                        <p><a href="mailto:info@i360x.nl">info(at)i360x.nl</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <script src="vendor/jquery/jquery.min.js">
+        </script>
+        <script src="vendor/bootstrap/js/bootstrap.min.js">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js">
+        </script>
+        <script src="vendor/scrollreveal/scrollreveal.min.js">
+        </script>
+        <script src="vendor/magnific-popup/jquery.magnific-popup.min.js">
+        </script>
+        <script src="js/creative.min.js">
+        </script>
+        <script>
+            (function (d, e, j, h, f, c, b) {
+                d.GoogleAnalyticsObject = f;
+                d[f] = d[f] || function () {
+                    (d[f].q = d[f].q || []).push(arguments)
+                }, d[f].l = 1 * new Date();
+                c = e.createElement(j), b = e.getElementsByTagName(j)[0];
+                c.async = 1;
+                c.src = h;
+                b.parentNode.insertBefore(c, b)
+            })(window, document, "script", "https://www.google-analytics.com/analytics.js", "ga");
+            ga("create", "UA-81357621-1", "auto");
+            ga("send", "pageview");
+        </script>
+
+        <script>
+            var scene = document.querySelector("a-scene");
+            var sky = document.querySelector('a-sky');
+            var animat = document.querySelector('a-animation');
+            var n = 1;
+            var nameImg = document.getElementById("imgName");
+
+
+
+            //        if (!isMobile()) {
+            //        
+            //        
+            //                    }
+
+
+            if (scene.hasLoaded) {
+                run();
+            } else {
+                scene.addEventListener("loaded", run);
+            }
+
+
+            function run() {
+
+                animat.addEventListener('animationend', function (e) {
+                    console.log("animationend");
+                    console.log("status voor = " + n);
+                
+                    switch (n) {
+                        case 0:
+                            sky.setAttribute('src', '#img360');
+                            nameImg.innerHTML = 'Baksels -ABSOLUTELY HOMEMADE';
+                            n++;
+                            break;
+                        case 1:
+                            sky.setAttribute('src', '#img3601');
+                            nameImg.innerHTML = 'Gallerie Mokum';
+                            n++;
+                            break;
+                        case 2:
+                            sky.setAttribute('src', '#img3602');
+                            nameImg.innerHTML = 'Pim Dekkers - Hoofdkantoor Zoover';
+                            n++;
+                            break;
+                        case 3:
+                            sky.setAttribute('src', '#img3603');
+                            nameImg.innerHTML = 'Voldamse Vishandel Dick Tol';
+                            n++;
+                            break;
+                        case 4:
+                            sky.setAttribute('src', '#img3604');
+                            nameImg.innerHTML = 'Lazangne';
+                            n++;
+                            break;
+                        case 5:
+                            sky.setAttribute('src', ' #img3605');
+                            nameImg.innerHTML = 'Wijnbar De Liefde';
+                            n++;
+                            break;
+                        default:
+                            sky.setAttribute('src', 'img/header/header.jpg');
+                            nameImg.innerHTML = 'artRoxy';
+                            n = 0;
+                    }
+                
+                    console.log("status na = " + n);
+                    animat.start();
+                }, false);
+
+            }
+     
+
+        </script>
+    </body>
+
+</html>

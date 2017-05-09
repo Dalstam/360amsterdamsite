@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>
+      i360x - 360&deg; graden ervaringen
+    </title>
+
+    <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+    <script src="js/layout.min.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src=https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js></script>
+    <script src=https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+
+    <a-scene>
+      <a-assets>
+        <a-mixin id="voor" text="align: center; width: 30;
+                  value: voor"></a-mixin>
+
+        <a-mixin id="achter" text="align: center; width: 30;
+                            value: achter"></a-mixin>
+
+        <a-mixin id="links" text="align: center; width: 30;
+                                      value: links"></a-mixin>
+                                      
+        <a-mixin id="rechts" text="align: center; width: 30;
+                                                value: rechts"></a-mixin>
+      </a-assets>
+      <a-camera position="0 1.7 0" cursor-visible="" cursor-scale="" cursor-color="">
+        <a-animation attribute="rotation" delay="2000" dur="200000" direction="reverse" easing="linear" fill="both" to="0 360 0">
+        </a-animation>
+      </a-camera>
+      <a-sky src="img/360img.jpg">
+      </a-sky>
+
+
+      <a-entity layout="type: circle; radius: 50" position="0 0 0">
+
+        <a-text id="v" mixin="voor" position="0 3.5 3" wrap-count="20"></a-text>
+        <!-- <a-text id="a" mixin="achter" position="-3 1.7 0" wrap-count="30"></a-text>
+        <a-text id="l" mixin="links" position="-3 1.7 0" wrap-count="40"></a-text>
+        <a-text id="r" mixin="rechts" position="0 1 0" wrap-count="50"></a-text> -->
+
+      </a-entity>
+
+
+
+    </a-scene>
+
+
+    <script>
+      var scene = document.querySelector("a-scene");
+      var sky = document.querySelector('a-sky');
+      var animat = document.querySelector('a-animation')
+      var n = 1;
+      if (scene.hasLoaded) {
+        run();
+      } else {
+        scene.addEventListener("loaded", run);
+      }
+
+
+
+
+
+      function run() {
+
+        animat.addEventListener('animationend', function(e) {
+          console.log("animationend");
+          console.log("status voor = " + n);
+
+          switch (n) {
+            case 0:
+              sky.setAttribute('src', "img/360img.jpg");
+              n++
+              break;
+            case 1:
+              sky.setAttribute('src', "img/360img1.jpg");
+              n++
+              break;
+            case 2:
+              sky.setAttribute('src', "img/360img2.jpg");
+              n++
+              break;
+            case 3:
+              sky.setAttribute('src', "img/360img3.jpg");
+              n++
+              break;
+            case 4:
+              sky.setAttribute('src', "img/360img4.jpg");
+              n++
+              break;
+            default:
+              sky.setAttribute('src', "img/header.jpg");
+              n = 0
+          }
+
+          console.log("status na = " + n);
+          animat.start();
+        }, false);
+
+      }
+    </script>
+
+
+  </body>
+
+</html>

@@ -1,0 +1,65 @@
+#brandLogo {
+  width: 70%;
+
+}
+
+.navbar-brand {
+position: absolute;
+padding-top: 3px;
+}
+
+#myDiv {
+  display: none;
+}
+
+iframe {
+  width: 100%;
+  height: 759px;
+}
+
+
+#myEmbeddedScene{
+  width: 100%;
+  height: 759px;
+}
+
+#headerLogo{
+  max-width: 40%;
+  text-align: center;
+  display: inline;
+
+}
+.a-enter-vr-button{
+  display: none;
+}
+
+#homeHeading{
+  text-transform: uppercase;
+  font-weight: 400;
+  text-align: center;
+  font-size: larger;
+  color: #000;
+}
+
+h2.text-muted{
+  font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+}
+.active{
+  text-decoration: underline;
+}
+
+@media (max-width:736px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+  #myEmbeddedScene{
+  display: none;
+  }
+
+#brandLogo {
+    width: 50%;
+}
+
+.navbar-brand {
+position: absolute;
+padding-top: 6px;
+}
+
+}
